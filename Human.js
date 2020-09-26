@@ -12,9 +12,7 @@ class Human {
     }
 
     setFullName(fullName) {
-        fullName = fullName.split(' ');
-        this.name = fullName[0];
-        this.surname = fullName[1];
+        [this.name, this.surname] = fullName.split(' ');
     }
 }
 
